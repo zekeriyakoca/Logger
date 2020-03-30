@@ -10,8 +10,6 @@ namespace Microsoft.Extensions.Hosting
   {
     public static IHostBuilder UseCustomSerilog(this IHostBuilder hostBuilder)
     {
-
-
       hostBuilder.UseSerilog((hostingContext, loggerConfiguration) =>
       {
         var elasticSearchUrl = hostingContext.Configuration["Logging:ElasticSearchUrl"];
